@@ -1,0 +1,69 @@
+.scrollup{
+    position: fixed;
+right: .8rem;
+bottom: -20%;
+background-color: var(--title-color);
+opacity: 0.8;
+padding: 0.3rem 0.5rem;
+border-radius: 0.4rem;
+z-index: var(--z-tooltip);
+transition: .4s;
+}
+.scrollup__icon{
+    font-size: 1.5rem;
+    color: var(--container-color);
+}
+.scrollup:hover{
+    background-color: var(--title-color-dark);
+}
+
+/* show scroll */
+.show-scroll{
+    bottom: 2rem;
+}
+
+/* ======= BREAKPOINTS ===================*/
+
+/* FOR LARGE DEVICES */
+@media screen and (max-width: 1350px) {
+
+    .scrollup{
+        right: 1.2rem;
+        /* padding: 0.25rem 0.4rem; */
+    }
+    .scrollup__icon{
+        /* font-size: 1.25rem; */
+    }
+  }
+@media screen and (max-width: 992px) {
+
+    .scrollup{
+        right: 5rem;
+        padding: 0.25rem 0.4rem;
+    }
+    .scrollup__icon{
+        font-size: 1.25rem;
+    }
+  }
+  /* FOR medium DEVICES */
+  
+  @media screen and (max-width: 768px) {
+  
+  .show-scroll{
+    bottom: 4rem;
+  }  
+  }
+  @media screen and (max-width: 576px) {
+    .scrollup{
+        right: 2rem;
+    }
+
+  }
+    /* FOR small DEVICES */
+  
+  @media screen and (max-width: 360px) {
+    .scrollup{
+        right: 1rem;
+    }
+  }
+  
